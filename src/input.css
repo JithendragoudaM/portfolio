@@ -1,0 +1,160 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Gabriela&family=Italianno&family=Pirata+One&display=swap');
+
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+
+
+.container {
+    @apply bg-teal-100 mt-[85px] rounded-4xl  h-[82%] flex flex-col overflow-hidden m-auto text-center  my-10 w-11/12 md:w-5/6 max-w-[180rem] mx-auto;
+}
+
+.about {
+    @apply flex flex-row grow-0 h-[50%] justify-center align-middle;
+}
+
+.card-container {
+    /* display: flex ;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; */
+    width: 90%;
+    height: 80%;
+    /* background-color: black; */
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        transform: translateY(0%);
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+    }
+}
+
+.card-content {
+    transform: translateY(100%);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.card:hover img {
+    /* display: none; */
+    transform: translateY(-50%);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.card:hover .card-content {
+    visibility: visible;
+    transform: translateY(-400%);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+
+
+}
+
+.trans:hover {
+    color:red;
+    border-bottom: 2px solid lightblue;
+    text-shadow: 0 0 10px 5px lightblue;
+    transition: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+ 
+    
+    /* background-color: #CCFBF1; */
+} 
+
+
+
+.italianno-regular {
+  font-family: "Italianno";
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+
+.pirata-one-regular {
+  font-family: "Pirata One";
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.gabriela-regular {
+  font-family: "Gabriela";
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.alkatra-regular {
+  font-family: "Alkatra", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.appearance {
+    animation: appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@theme {
+  --breakpoint-xs: 22.5rem;
+  --breakpoint-2xl: 46.5rem;
+  --breakpoint-3xl: 67.5rem;
+}
+
+.grid-sec {
+    @apply 2xl:grid 2xl:grid-cols-3 xs:grid xs:grid-cols-2  xs:h-[60%] 2xl:h-[60%] 3xl:h-[60%];
+}
+
+.grid-img {
+    @apply xs:h-[40px] 2xl:h-[70px] 3xl:h-[100px];
+}
+
+.prog-bar {
+    @apply xs:w-[70%] 2xl:w-[70%] 3xl:w-[40%];
+}
+
+.heading {
+    @apply 3xl:text-6xl 2xl:text-4xl xs:text-2xl pt-7 text-blue-400;
+}
