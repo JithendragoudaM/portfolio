@@ -10,23 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Gabriela&family=Italianno&family=Pirata+One&family=Sedan+SC&display=swap" rel="stylesheet">    <link href="./src/output.css" rel="stylesheet">
     
     <!-- Icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-y5OABgKuZ4y2YfQvQmhYHhS8ZAIiMeV95dYkVko/3bWACy8A5zvWya8cWJcfXbMq6jArKZz9HVj8Ntb2ECkGUg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
 
     <title>Jithendra Gouda M</title>
+
+
+    </style>
+
+
 </head>
 
 <body class="bg-linear-to-r from-[#4c815d] to-[#472b23] h-screen ">
     <!-- Header Section -->
     <header
-        class="flex justify-between z-[1000] h-[80px]  items-center fixed top-0 w-[100%]  text-amber-100 bg-linear-to-r from-[#4c815d] to-[#472b23] text-2xl px-4 ">
-        <div><img src="src/img/developer.png" alt="devoloper-icon" class="w-[50px]"></div>
-        <div><a href=""><i class="fa-solid fa-circle-half-stroke"></i></a></div>
-        <nav class=" xs:hidden 2xl:block 3xl:block">
-            <a href="#" class="mx-1 trans">Home</a>
-            <a href="#skills" class="mx-1 trans">Skills</a>
-            <a href="#projects" class="mx-1 trans">Projects</a>
-            <a href="#About" class="mx-1 trans">About</a>          
-            <a href="#contact" class="mx-1 trans">Contact</a>
+        class="flex justify-between z-[1000] items-center header-content
+        bg-teal-100 
+        2xl:h-[80px] xs-h-[70px] xs:box-border 2xl:text-lg 3xl:text-2xl xs:text-lg px-5  
+        m-auto text-center my-10 w-11/12 md:w-5/6 max-w-[180rem] mx-auto ">
+        <div class="flex items-center gap-3 gabriela-regular text-[gray]">
+            <img src="src/img/developer.png" alt="devoloper-icon" class="w-[50px] xs-w-[35px]"> 
+            Web Developer
+        </div>
+        <div>
+            <a href="" class="trans-header">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </a>
+        </div>
+        <nav class=" xs:hidden 2xl:block 3xl:block gabriela-regular">
+            <a href="#home" class="mx-1 trans-header">Home</a>
+            <a href="#skills" class="mx-1 trans-header">Skills</a>
+            <a href="#projects" class="mx-1 trans-header">Projects</a>
+            <a href="#About" class="mx-1 trans-header">About</a>
+            <a href="#contact" class="mx-1 trans-header">Contact</a>
         </nav>
 
     </header>
@@ -37,15 +65,11 @@
 
 
     <main
-        class="bg-teal-100 appearance h-[82%] mt-[85px] rounded-4xl  
-        2xl:flex xs:flex xs:flex-col xs:items-center xs:justify-center xs:text-center
-        3xl:flex 3xl:flex-row
-        overflow-hidden m-auto  my-10 w-11/12 md:w-5/6 max-w-[180rem] mx-auto">
+        id="home"
+        class="main-content">
         <section class="2xl:w-[80%] 2xl:gap-5 flex flex-col  justify-center p-5">
             <h2 class=" 3xl:text-4xl 2xl:text-4xl xs:text-[22px] autoshow gabriela-regular">Hi I'm Jithendra Gouda M</h2>
             <h1 class="3xl:text-8xl 2xl:text-7xl xs:text-3xl text-gray-500 sedan-sc-regular">WEB <span class="text-blue-600 dark:text-sky-400">DESIGNER</span></h1>
-           
-            
         </section>
         <section class="
         3xl:w-[50%] 3xl:h-[100%] xs:w-[80%] xs:h-[60%] xs:text-center">
@@ -54,10 +78,10 @@
 
     </main>
     <!-- Skills -->
-    <section id="skills" class=" appearance bg-teal-100 mt-[85px] rounded-4xl  h-[82%] flex flex-col gap-3 xs:gap-1 overflow-hidden m-auto text-center  my-10 w-11/12 md:w-5/6  max-w-[180rem] mx-auto">
-
+    <section id="skills" class="container appearance">
+       
         <h1 class="heading alkatra-regular">What I do ?</h1>
-        <p class="xs:text-sm 2xl:text-2xl px-3 py-2 text-cyan-950 gabriela-regular  ">I love building websites that look great and work smoothly.<br>
+        <p class="xs:text-sm 2xl:text-xl 3xl:text-2xl px-3 py-2 text-cyan-950 gabriela-regular  ">I love building websites that look great and work smoothly.<br>
         Using tools like HTML, CSS, JavaScript, and React, I bring ideas to life on the web.<br>
         I also enjoy coding in Java and using Git to keep my projects organized and growing.</p>
         <section class="grid-sec">
@@ -103,65 +127,127 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="container appearance flex flex-col text-center gap-3">
+    <section id="projects" class="container appearance ">
         <h1 class="heading alkatra-regular">Wanna See My Work ?</h1>
         <section class="card-container">
             <div id="first" class="h-[90%] card">
-                <img class=" h-[100%]" src="src/img/youtube.jpg" alt="">
+                <img class=" h-[100%]" src="src/img/youtube.jpg" alt="youtube clone-image">
                 <div class="card-content">
-                    <h2 >Youtube Clone</h2>
-                    <p class=" text-cyan-950 gabriela-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
+                    <h2 class="text-red-500 font-bold card-text-h alkatra-regular"><i class="fa-brands fa-youtube"></i> Youtube Clone</h2>
+                    <p class=" text-cyan-950 gabriela-regular card-text-p">
+                        Responsive web page designed using <strong>HTML</strong> and <strong><em>CSS</em></strong> that replicates the 
+                        layout and appearance of the YouTube homepage.
+                    </p>
 
                 </div>
             </div>
             <div id="sec" class="h-[90%] card">
-                <img class="h-[100%" src="src/img/E-commerce.jpg" alt="">
+                <img class="h-[100%]" src="src/img/E-commerce.jpg" alt="E-commere website -image">
                  <div class="card-content">
-                    <h2>Youtube Clone</h2>
-                    <p class=" text-cyan-950 gabriela-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
+                    <h2 class="text-teal-800 font-bold card-text-h alkatra-regular"><i class="fa-solid fa-cart-shopping"></i> Web Bazaar</h2>
+                    <p class=" text-cyan-950 gabriela-regular card-text-p">
+                        is a modern e-commerce web application that allows users to browse, 
+                        search, and purchase products online with a clean and responsive user interface
+                    </p>
 
                 </div>
             </div>
             <div id="third" class="h-[90%] card">
-                <img class="h-[100%" src="src/img/Galary.jpg" alt="">
+                <img class="h-[100%" src="src/img/Galary.jpg" alt="Galary-image">
                  <div class="card-content">
-                    <h2>Youtube Clone</h2>
-                    <p class=" text-cyan-950 gabriela-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
+                    <h2 class="text-pink-400 font-bold card-text-h alkatra-regular"><i class="fa-regular fa-images"></i> Galary</h2>
+                    <p class=" text-cyan-950 gabriela-regular card-text-p">
+                        <strong>Photo Gallery</strong> is a <strong><em>frontend-focused</em></strong> project that 
+                        allows users to browse and interact with a collection of images
+                    </p>
 
                 </div>
             </div>
         </section>
 
-        
-        <section class="mt-4">
-            <a href="#first" id="f"><i class="fa-solid fa-1"></i></a>
-            <a href="#sec" id="s"><i class="fa-solid fa-2"></i></a>
-            <a href="#third" id="t"><i class="fa-solid fa-3"></i></a>
+        <section class="w-[50%] flex justify-around items-center">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="#first" class="trans-header"><i class="fa-solid fa-1"></i></a>
+            <a href="#sec" class="trans-header"><i class="fa-solid fa-2"></i></a>
+            <a href="#third" class="trans-header"><i class="fa-solid fa-3"></i></a>
+            <i class="fa-solid fa-arrow-right"></i>
         </section>
+
+        
     
     </section>
 
+     <!-- Certificates -->
+
+     <section id="certificate" class="container appearance ">
+        <h1 class="heading alkatra-regular">Certificates</h1>
+        <section class="cards-container">
+
+            <!-- Cer-1 -->
+            <a href="#HTML" class="3xl:w-[30%] 3xl:h-[80%] 2xl:w-[80%] 2xl:h-[30%] xs:w-[80%] xs:h-[30%]">
+                <div  class="cards">
+                    <img class="" src="src/img/html.jpg" alt="HTML certificate">
+        
+                </div>        
+            </a>
+        
+            <div id="HTML" class="fullscreen">
+                <a href="#" class="close"><p><i class="fa-solid fa-circle-xmark"></i></p></a>
+                <img class="" src="src/img/css.jpg" alt="HTML certificate">
+            </div>
+            <!-- Cer-2 -->
+            <a href="#css"  class="3xl:w-[30%] 3xl:h-[80%] 2xl:w-[80%] 2xl:h-[30%] xs:w-[80%] xs:h-[30%]">
+                <div  class="cards">
+                    <img class="" src="src/img/css.jpg" alt="CSS certificate">
+        
+                </div>        
+            </a>
+        
+            <div id="css" class="fullscreen">
+                <a href="#" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+                <img class="" src="src/img/css.jpg" alt="CSS certificate-image">
+            </div>
+
+            <!-- Cer-3 -->
+             <a href="#js" class="3xl:w-[30%] 3xl:h-[80%] 2xl:w-[80%] 2xl:h-[30%] xs:w-[80%] xs:h-[30%]">
+                <div  class="cards">
+                    <img class=" " src="src/img/js.jpg" alt="Java certificate-image">
+        
+                </div>        
+            </a>
+        
+            <div id="js" class="fullscreen">
+                <a href="#" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+                <img class="" src="src/img/js.jpg" alt="Java certificate-image">
+            </div>
+        </section>
+
+        <p class="gabriela-regular text-green-950">Click on certicates to zoom in</p>
+        
+    
+    </section>
+    
+
     <!-- About  -->
     
-    <section id="About" class="container appearance flex flex-col text-center gap-3">
+    <section id="About" class="container appearance">
+
         <h2 class="heading alkatra-regular">About Me</h2>
     
 
-        <section class="about py-3">
+        <section class="about-content">
     
-            <section class="w-[40%] h-[100%] ">
+            <section class="2xl:w-[40%] 2xl:h-[60%] xs:w-[40%] xs:h-[30%] 2xl:pl-3">
                 <div class="flex justify-center align-middle h-[100%]">
-                    <img src="src/img/about.jpg" alt="" class="rounded-[50%]  h-[100%] ">
+                    <img src="src/img/about.jpg" alt="" class="rounded-[50%]  h-[100%]  ">
                 </div>
     
-            </section>
-            
-          
-    
-            <section class="w-[50%] h-[100%] px-3 ">
+            </section> 
+
+            <section class="w-[50%] xs:w-[90%] h-[100%] px-3 ">
                 <div class="h-[100%] flex flex-col justify-center items-center">
-                    <h1 class="text-3xl text-blue-500 mb-3 text-center alkatra-regular">Hey, I'm Jeethu </h1>
-                    <p class=" text-cyan-950 gabriela-regular w-[90%] text-lg">
+                    <h1 class="text-3xl text-blue-500 mb-3 text-center alkatra-regular card-text-h">Hey, <strong>I'm Jeethu</strong> </h1>
+                    <p class=" text-cyan-950 gabriela-regular w-[90%] card-text-p">
                         I’m a fresher <strong>Web Developer </strong>who loves turning ideas into interactive and dynamic
                         web
                         applications. I’ve worked on projects using Spring Boot and React, and I’m always exploring better
@@ -176,9 +262,9 @@
         </section>
         <hr class="w-[90%] self-center">
         <section class="">
-            <h2 class="text-3xl mb-2  text-blue-600 alkatra-regular
+            <h2 class="text-3xl mb-2  text-stone-700 alkatra-regular card-text-h
             ">Why Work With Me ?</h2>
-            <table class="w-[100%] mx-auto text-lg  text-cyan-950 gabriela-regular">
+            <table class="w-[100%] mx-auto card-text-p text-cyan-950 gabriela-regular">
                 <tr>
                     <td class="text-end">Analytical</td>
                     <td><i class="fa-solid fa-check text-blue-600"></i></td>
@@ -200,38 +286,75 @@
 
     
     </section>
+
+    <section class="main-content appearance t m-auto w-11/12 md:w-5/6 max-w-[180rem] mx-auto">
+        <h2 class="heading alkatra-regular 
+        w-[100%] fixed 3xl:top-[10px] 2xl:top-[25px] xs:top-[20px]">Namaste</h2>
+        <article class="xs:w-[80%] xs:h-[30%] 2xl:w-[80%] 2xl:h-[40%]
+        3xl:w-[50%] 3xl:h-[75%]">
+            <img src="src/img/contact.jpg" alt="" class="h-[100%] w-[100%] xs:rounded-t-3xl 3xl:rounded-none">
+        </article>
+        <form action=" " class="3xl:w-[50%] 3xl:h-[75%] 2xl:w-[80%] 2xl:h-[40%]  xs:w-[80%] xs:h-[50%] 
+          bg-yellow-200 p-[10px] flex justify-center xs:rounded-b-3xl 3xl:rounded-none alkatra-regular" >
+            
+            <div class="flex flex-col box-border 2xl:w-[80%] 2xl:h-[100%] xs:w-[80%] xs:h-[100%] p-10 3xl:gap-9 2xl:gap-9 xs:gap-4 justify-center  align-middle">
+                <div class="w-[100%] 
+                3xl:flex 3xl:flex-row 3xl:justify-between 
+                2xl:flex 2xl:flex-row 2xl:justify-between 
+                xs:flex xs:flex-col 3xl:gap-9 2xl:gap-9 xs:gap-4 ">
+                    <input type="text" name="fullName" placeholder="Full name" required class=" 2xl:w-[45%] xs:w-[100%] mx-2
+                      border-b-1 ">
+                    <input type="text" name="email" placeholder="email" required class="2xl:w-[45%] xs:w-[100%] mx-2 border-b-1">
+           
+                </div>
+                
+                    <input type="text" name="subject" placeholder="subject" required class="w-80% border-b-1 ">
+                
+                
+                    <input type="text" name="messege" placeholder="message" class="w-80% border-b-1 ">
+                    
+                    <button type="submit" class="w-[100%] bg-sky-400 cursor-pointer py-3 text-center text-xxl">Send</button>
+                
+            </div>
+
+        </form>
+    </section>
+
     <!-- bg-linear-to-r from-[#4c815d] to-[#472b23] -->
 
-    <footer id="contact" class="w-full  text-cyan-950 gabriela-regular p-4 xs:grid xs:grid-cols-2 2xl:flex  2xl:justify-around  2xl:items-center mt-[85px]">
+    <footer id="contact" class="w-full text-cyan-950 gabriela-regular p-4 
+    xs:grid xs:grid-cols-1 xs:self-center xs:text-center xs:items-center xs:justify-center
+    2xl:flex  2xl:justify-around  2xl:items-center mt-[95px] appearance-footer">
 
         
-        <div class="flex flex-col text-2xl xs:text-lg">  
-           
-            <p class=" mx-3 my-3 "><a href="tel:+919121855372" class="trans"><i class="fa-solid fa-location-dot"></i> Bengaluru</a></p>
-            <div class="text-3xl mx-3 xs:text-lg">
+        <div class="flex flex-col 3xl:text-2xl 2xl:text-xl xs:text-lg">  
+            <div class="text-3xl mx-3 3xl:text-2xl 2xl:text-xl xs:text-lg">
                 <a href="" class="trans"><i class="fa-brands fa-facebook"></i></a>
                 <a href="" class="trans mx-2"><i class="fa-brands fa-instagram"></i></a>
                 <a href="" class="trans"><i class="fa-brands fa-square-x-twitter"></i></a>
-            </div>    
+            </div> 
+            <p class="mx-3 my-3 "><a href="" class="trans"><i class="fa-solid fa-location-dot"></i> Bengaluru</a></p>
+   
         </div>    
 
-        <div class="flex flex-col text-2xl xs:text-lg 2xl:text-2xl">  
+        <div class="flex flex-col 3xl:text-2xl 2xl:text-xl xs:text-lg ">  
            
             <p class="mx-3 my-3 "><a href="tel:+919121855372" class="trans"><i class="fa-solid fa-square-phone "></i> +91 9121855372</a></p>
-            <p class="mx-3 xs:hidden "><a href="mailto:jitendragoudam@gmail.com" class="trans"><i class="fa-solid fa-envelope"></i> jitendragoudam@gmail.com</a></p>
+            <p class="mx-3 "><a href="mailto:jitendragoudam@gmail.com" class="trans"><i class="fa-solid fa-envelope"></i> jitendragoudam@gmail.com</a></p>
         </div>
 
-        <div class="flex flex-col text-2xl xs:text-lg"> 
+        <div class="flex flex-col 3xl:text-2xl 2xl:text-xl xs:text-lg"> 
             
             <p class="mx-3 my-3 "><a class="trans"
                 href="src/files/Jithendra_Gouda_M_Resume.pdf" download="Jithendra-resume">Resume</a></p>
             <p class="mx-3 "><a href="#" class="trans">Back to top</a></p>
 
-        </div>
-        
+        </div>       
         
 
     </footer>
+
+    <div class="h-[40px] mt-0 border-box"></div>
 
    
     
